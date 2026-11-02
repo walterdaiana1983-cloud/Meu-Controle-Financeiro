@@ -1,0 +1,31 @@
+MEU CONTROLE FINANCEIRO — VERSÃO GRÁTIS + PREMIUM
+Visual preto e dourado.
+
+COMO TESTAR
+1. Extraia o ZIP.
+2. Abra index.html em um navegador moderno para testar as funções básicas.
+3. Para instalar como PWA, hospede os arquivos em um endereço HTTPS e use “Instalar app”/“Adicionar à tela inicial”.
+
+VERSÃO GRÁTIS IMPLEMENTADA
+- Até 30 movimentações por mês.
+- Até 5 produtos diferentes no estoque.
+- Painel de saldo, entradas, gastos e lucro estimado.
+- Registro de movimentações, vendas e estoque.
+- Metas, cofrinho, relatórios básicos e calendário.
+- Os dados ficam no armazenamento local do navegador/dispositivo.
+
+PREMIUM — PROPOSTA COMERCIAL
+- Preço planejado: R$ 15,00, pagamento único.
+- Oferta Premium aparece após 90 segundos sem interação.
+- Tela de apresentação lista os recursos Premium.
+- Exportação e restauração de backups estão bloqueadas na versão grátis.
+
+IMPORTANTE SOBRE PAGAMENTOS
+Esta versão NÃO está conectada ao PicPay nem a qualquer gateway de pagamento. A tela Premium informa claramente que o pagamento automático está em preparação e não apresenta chave Pix nem botão falso de confirmação.
+Para ativar compras reais, será necessário contratar/configurar um provedor compatível, obter credenciais comerciais, criar um backend seguro para receber e validar notificações de pagamento (webhooks), associar cada compra à conta do cliente e só então liberar o Premium. Nunca confiar apenas em comprovantes enviados pelo comprador ou em dados guardados no próprio navegador.
+
+LIMITAÇÕES TÉCNICAS
+- Ainda é uma aplicação web/PWA, não um APK ou AAB.
+- Não tem login, sincronização em nuvem ou recuperação de conta entre dispositivos.
+- A flag Premium ainda não é ativável por compra; a integração de pagamento e o desbloqueio seguro ainda precisam ser desenvolvidos e testados.
+- Para Google Play será necessário preparar o pacote Android, política de privacidade, ficha da loja, classificação etária e cumprir as regras atuais da Play Console. Compras de recursos digitais dentro do app devem seguir as regras de cobrança aplicáveis da Google Play.

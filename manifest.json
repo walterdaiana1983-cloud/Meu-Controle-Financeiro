@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Meu Controle Financeiro Premium",
+  "short_name": "Meu Financeiro",
+  "description": "Organize entradas, gastos, vendas, estoque, metas e cofrinho.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0b0b0b",
+  "background_color": "#0d0d0d",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
