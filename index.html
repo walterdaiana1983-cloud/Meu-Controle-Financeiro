@@ -23,6 +23,50 @@ nav{display:flex;gap:7px;overflow-x:auto;padding:17px 0 3px}nav button,.btn{whit
 </style>
 </head>
 <body>
+
+<style>
+#clientWelcome{max-width:850px;margin:28px auto;padding:24px;color:#f7f1df}
+#clientWelcome .hero{padding:30px 22px;border:1px solid #b68b36;border-radius:22px;background:linear-gradient(135deg,#242016,#101010);text-align:center}
+#clientWelcome h2{font-size:30px;margin:8px 0;color:#f4d58a}
+#clientWelcome p{line-height:1.6;color:#d7d0c1}
+#clientWelcome .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}
+#clientWelcome .feature{background:#1b1b1b;border:1px solid #393329;border-radius:14px;padding:16px}
+#clientWelcome h3{color:#f4d58a}
+#clientWelcome button{background:#d6a83f;color:#17130a;border:0;border-radius:12px;padding:14px 22px;font-weight:800;font-size:16px}
+#clientWelcome .premium{border:1px solid #b68b36;border-radius:16px;padding:18px;background:#17140e}
+body:not(.app-started) > header,body:not(.app-started) > main,body:not(.app-started) > .foot,body:not(.app-started) > .premium-strip,body:not(.app-started) > .modal-backdrop{display:none!important}
+body.app-started #clientWelcome{display:none}
+</style>
+<div id="clientWelcome">
+ <div class="hero">
+  <div style="font-size:38px">₿</div>
+  <h2>Meu Controle Financeiro</h2>
+  <p>Organize seu dinheiro, acompanhe suas vendas e cuide das suas metas em um só lugar.</p>
+  <p><strong>Comece grátis. Sem precisar pagar.</strong></p>
+  <button id="startFree">Começar grátis</button>
+ </div>
+ <h3>O que você pode fazer gratuitamente</h3>
+ <div class="features">
+  <div class="feature"><h3>💰 Finanças</h3><p>Registre entradas, gastos, vendas e custos.</p></div>
+  <div class="feature"><h3>📦 Estoque</h3><p>Cadastre até 5 produtos e acompanhe quantidades.</p></div>
+  <div class="feature"><h3>🎯 Metas</h3><p>Acompanhe suas metas e seu cofrinho.</p></div>
+  <div class="feature"><h3>📊 Organização</h3><p>Consulte histórico, relatórios e calendário.</p></div>
+ </div>
+ <p style="text-align:center">Plano grátis: até 30 movimentações por mês e 5 produtos diferentes.</p>
+ <div class="premium">
+  <h3>👑 Conheça o Premium</h3>
+  <p>Uma experiência com limites ampliados e ferramentas extras, como análises financeiras, previsões de saldo, relatórios avançados e recursos adicionais de organização.</p>
+  <p><strong>Premium em preparação:</strong> a contratação e a confirmação automática de pagamento ainda não estão disponíveis. Você pode usar o plano grátis normalmente.</p>
+ </div>
+ <p style="text-align:center;margin-top:20px"><button id="startFree2">Usar gratuitamente</button></p>
+ <p style="text-align:center;font-size:12px">Seus registros ficam salvos no navegador deste aparelho. Não há conta online nem sincronização automática.</p>
+</div>
+<script>
+function startFreeApp(){document.body.classList.add('app-started');window.scrollTo(0,0)}
+document.getElementById('startFree').addEventListener('click',startFreeApp);
+document.getElementById('startFree2').addEventListener('click',startFreeApp);
+</script>
+
 <header><div class="wrap">
 <div class="headrow"><div class="brand"><div class="logo">₿</div><div><h1>Meu Controle Financeiro</h1><p>PREMIUM • PRETO & DOURADO</p></div></div><button id="installBtn" class="btn" hidden>Instalar</button></div>
 <div class="privacy">Seu dinheiro organizado em um só lugar. Os dados ficam neste dispositivo.</div>
